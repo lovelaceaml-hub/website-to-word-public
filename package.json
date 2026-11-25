@@ -1,0 +1,24 @@
+{
+  "name": "website-to-word",
+  "version": "1.0.0",
+  "description": "Chrome extension that saves selected web pages as Word, Markdown or PDF.",
+  "private": true,
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "node scripts/build-extension.mjs",
+    "check": "node --test tests/package.test.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "docx": "^8.5.0",
+    "jsdom": "^29.1.1",
+    "pdfmake": "^0.3.11"
+  }
+}

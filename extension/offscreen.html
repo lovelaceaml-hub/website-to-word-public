@@ -1,0 +1,18 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Website to Word — worker</title>
+<!-- This page is never shown. It exists so we have a DOM (for DOMParser,
+     Readability, images and canvas) plus fetch, which the service worker
+     lacks. All scripts are classic and vendored locally. -->
+<script src="vendor/docx.js"></script>
+<script src="vendor/Readability.js"></script>
+<!-- pdfmake must load before vfs_fonts.js: the font file registers itself
+     onto the pdfMake global as soon as it runs. -->
+<script src="vendor/pdfmake.js"></script>
+<script src="vendor/vfs_fonts.js"></script>
+<script src="adapters.js"></script>
+<script src="extract.js"></script>
+<script src="docbuild.js"></script>
+<script src="mdbuild.js"></script>
+<script src="pdfbuild.js"></script>
+<script src="offscreen.js"></script>
